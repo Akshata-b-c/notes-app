@@ -72,7 +72,7 @@ A cloud-based note-taking web application built with Next.js, React, TypeScript,
 ## Live Demo
 
 Add your deployed Vercel website URL here:
-
+notes-app-teal-chi.vercel.app
 notes-bhstym1yn-akshata15.vercel.app
 
 ## GitHub Repository
