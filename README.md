@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cloud-Based Note-Taking Application
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+A cloud-based note-taking web application built with Next.js, React, TypeScript, and Firebase. Users can register, sign in, create notes, edit notes, delete notes, search notes, organize them using tags, and format content with Markdown. Notes are stored in Cloud Firestore, and users can share notes through read-only links that expire after 24 hours.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Email and password registration and login
+- Google sign-in
+- Create new notes
+- Edit existing notes
+- Delete notes
+- Search notes
+- Organize notes using tags
+- Write and preview Markdown content
+- Share notes through read-only links
+- Shared links expire after 24 hours
+- User-specific note access
+- Cloud storage using Cloud Firestore
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- React
+- TypeScript
+- Firebase Authentication
+- Cloud Firestore
+- React Markdown
+- CSS
+- Vercel
 
-## Learn More
+## Installation and Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/Akshata-b-c/notes-app.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Open the project directory:
 
-## Deploy on Vercel
+   ```bash
+   cd notes-app
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install dependencies:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env.local` file in the project root and add your Firebase configuration values:
+
+   ```env
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+   NEXT_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
+   ```
+
+5. Enable Email/Password and Google sign-in in Firebase Authentication, configure Cloud Firestore, and apply appropriate Firestore security rules.
+
+6. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+7. Open `http://localhost:3000` in your browser.
+
+## Live Demo
+
+Add your deployed Vercel website URL here:
+
+notes-bhstym1yn-akshata15.vercel.app
+
+## GitHub Repository
+
+https://github.com/Akshata-b-c/notes-app
+
+## Author
+
+Akshata
