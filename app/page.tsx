@@ -65,8 +65,11 @@ export default function Home() {
         await loginWithEmail(email, password);
       }
     } catch (error) {
+      const firebaseError = error as { code?: string; message?: string };
       setMessage(
-        error instanceof Error ? error.message : "Authentication failed."
+        `Authentication failed (${firebaseError.code || "unknown"}): ${
+          firebaseError.message || "Please try again."
+        }`
       );
     } finally {
       setBusy(false);
